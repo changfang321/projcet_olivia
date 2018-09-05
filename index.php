@@ -249,7 +249,7 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 	</div>
 
-	<div id="fh5co-testimonial" class="fh5co-bg-section">
+	<!-- <div id="fh5co-testimonial" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -299,10 +299,10 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	
 
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+	<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="container">
 			<div class="row">
 				<div class="display-t">
@@ -352,9 +352,9 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<div id="fh5co-started">
+	<!-- <div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -378,7 +378,7 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<?php require_once('template/footbar.php') ;?>
 	</div>

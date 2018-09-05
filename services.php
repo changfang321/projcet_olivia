@@ -93,7 +93,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-started">
+	<!-- <div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 <?php require_once('template/footbar.php') ;?>
 	</div>
