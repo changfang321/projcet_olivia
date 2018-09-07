@@ -1,0 +1,71 @@
+#block ul,
+#block li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#block ul {
+    position: relative;
+    z-index: 1;
+}
+
+#block .imgs li {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* z-index有修改過,原本9999 */
+#block .dots {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+#block .dots li {
+    /* float: left; */
+    display: inline;
+    margin-right: 5px;
+}
+
+#block .dots a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid transparent;
+    /* background-image: url('dot.png');
+    background-position: -2px 0; */
+}
+
+#block .dots li.selected a {
+    /* background-position: -20px 0; */
+    border: 1px solid red;
+}
+
+#block .dots a img {
+    width: 50px;
+    height: 50px;
+}
+
+#prev {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    display: none;
+}
+
+#next {
+    position: absolute;
+    top: 175px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    display: none;
+}

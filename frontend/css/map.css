@@ -1,0 +1,43 @@
+/* phone css */
+.mapul {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 480px;
+    float: left;
+    text-align: center;
+}
+
+#map div {
+    text-align: center;
+}
+
+#map div img {
+    width: 250px;
+    height: 250px;
+}
+
+.mapul iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 30px;
+    top: 30px;
+}
+
+@media only screen and (min-width: 481px) {
+    #map div img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px
+    }
+}
+
+/* pc css */
+@media only screen and (min-width: 1319px) {
+    .mapul {
+        width: 800px;
+        height: 500px;
+    }
+}

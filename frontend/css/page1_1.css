@@ -1,0 +1,258 @@
+/* phone css */
+#body {
+  margin: 0;
+  padding: 0;
+}
+
+#document {
+  width: 480px;
+  max-width: 1300px;
+  position: relative;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+#banner {
+  background-image: url('../imgs/aboutbg1.png');
+  float: left;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* *****************navbar start ************ */
+#navbar {
+  width: 450px;
+  height: 10%;
+  margin: auto;
+  float: left;
+}
+
+.nav,
+#contentul,
+.mapul,
+.tresA {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.nav,
+.nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.logoli a {
+  width: 220px;
+  display: block;
+  float: left;
+}
+
+.logoP {
+  display: block;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 70px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 25px;
+  color: rgb(255, 131, 73);
+}
+
+.logoP:hover {
+  color: rgb(252, 78, 78);
+}
+
+.tres {
+  display: block;
+  width: 120px;
+  height: 50px;
+  margin: 0px 5px 0px 1px;
+  padding-top: 8px;
+}
+
+.tres a {
+  font-size: 20px;
+  margin: 30px 0px 0px 146px;
+  background-color: antiquewhite;
+  border-radius: 13px;
+  padding: 4px 0 0 18px;
+}
+
+.tresA {
+  display: none;
+}
+
+/************** navbar end***************/
+.content {
+  width: 100%;
+  float: left;
+  margin-left: 15px;
+  /* margin-top: 10px auto 10 auto; */
+}
+
+.pagination {
+  padding-top: 20px;
+}
+
+.contentp {
+  /* border: 1px;
+  border-color: black;
+  border-style: solid; */
+  margin: 20px 0 20px 0;
+}
+
+.contentimg {
+  width: 450px;
+  height: 563px;
+  margin-top: 50px;
+}
+
+/* .contentdiv>p {
+  display: block;
+  padding-top: 5px;
+  font-size: 20px;
+} */
+.contentimg>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.backicon {
+  clear: both;
+  margin: 20px 0 20px 0;
+}
+
+/* tablet css */
+@media only screen and (min-width: 481px) {
+  #document {
+    width: 800px;
+  }
+
+  /* *****************navbar start ************ */
+  #navbar {
+    width: 800px;
+    height: 100px;
+  }
+
+  .nav {
+    margin-left: 20px;
+  }
+
+  .logoP {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  .tres {
+    width: 110px;
+  }
+
+  .nav li {
+    float: left;
+  }
+
+  .tres a {
+    font-size: 18px;
+    padding-top: 10px;
+    margin: 0px 0px 0px 155px;
+    padding: 4px 0 0 10px;
+    background-color: unset;
+  }
+
+  .tresA {
+    bottom: 25px;
+    display: block;
+  }
+
+  .logoli a img {
+    z-index: 1;
+    top: 10px;
+  }
+
+  /* ************navbar end********** */
+  .content {
+    margin-left: 0px;
+  }
+
+  .contentimg {
+    width: 500px;
+    height: 625px;
+    float: left;
+  }
+
+  .contentp {
+    float: left;
+    margin: 50px 0 0 30px;
+    text-align: center;
+    width: 260;
+  }
+
+  .contentp P {
+    width: 270px;
+  }
+}
+
+/* pc css */
+@media only screen and (min-width: 1319px) {
+  #document {
+    margin: auto;
+    width: 1300px;
+  }
+
+  /* *****************navbar start ************ */
+  #navbar {
+    width: 1300px;
+  }
+
+  .nav {
+    margin-left: 40px;
+  }
+
+  .nav li {
+    display: block;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .tresA {
+    top: 20px;
+  }
+
+  .tres {
+    margin-right: 50px;
+  }
+
+  .tres li {
+    display: block;
+    float: left;
+  }
+
+  .tres a {
+    width: 90%;
+    font-size: 20px;
+    right: 110px;
+  }
+
+  .menuFix {
+    width: 1300px;
+  }
+
+  /* ************navbar end********** */
+  .contentimg {
+    width: 600px;
+    height: 749px;
+    float: left;
+  }
+
+  .contentp P {
+    width: 270px;
+  }
+
+  .contentdiv {
+    margin-left: 200px;
+  }
+}

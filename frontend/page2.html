@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page1</title>
+    <link rel="stylesheet" href="fontawesome-5.2.0/css/all.css">
+    <link type="text/css" rel="stylesheet" href="path_to/simplePagination.css" />
+    <link rel="stylesheet" href="css/pagebtn.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+
+<body>
+
+
+
+    <div id="document">
+
+        <div id="banner"></div>
+
+
+        <div id="navbar">
+            <ul class="nav">
+                <li class="logoli">
+                    <a href=''><img src="imgs/logo.png"></a>
+                </li>
+                <li>
+                    <p class="logoP"><i class="fas fa-bars"></i></p>
+                    <ul class="tresA">
+                        <li>
+                            <h3 class='tres'>
+                                <a href=''>關於Olivia</a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class='tres'>
+                                <a href=''>花藝分享</a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class='tres'>
+                                <a href=''>特殊佈置</a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class='tres'>
+                                <a href=''>花坊位置</a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3 class='tres'>
+                                <a href=''>線上花店</a>
+                            </h3>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <div style="clear:both"></div>
+        </div>
+
+        <div class="content">
+            <div class="contentdiv">
+                <div class="contentimg">
+                    <img src="imgs/3.jpg" alt="">
+                </div>
+                <p>簡短的介紹 約30字以內</p>
+            </div>
+
+            <div class="contentdiv">
+                <div class="contentimg">
+                    <img src="imgs/3.jpg" alt="">
+                </div>
+                <p>簡短的介紹 約30字以內</p>
+            </div>
+
+            <div class="contentdiv">
+                <div class="contentimg">
+                    <img src="imgs/3.jpg" alt="">
+                </div>
+                <p>簡短的介紹 約30字以內</p>
+            </div>
+        </div>
+
+
+
+        <div class="pagination-holder clearfix">
+            <div id="light-pagination" class="pagination"></div>
+        </div>
+
+        <div id="footer">
+
+            <div class="footerlogo"><img src="imgs/footerlogo.png" alt=""></div>
+
+            <div class="footercontent">
+                <div class="footericon">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-blogger-b"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+
+                </div>
+                <div class="footerp">
+                    <p>Copyright <i class="far fa-copyright"></i>2018 Olivia flower design. All rights reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/navbar.js"></script>
+    <script type="text/javascript" src="path_to/jquery.js"></script>
+    <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
+    <script src="js/pagebtn.js"></script>
+
+
+    <script>
+        $(function () {
+            $('.logoP').click(function () {
+                $('.tresA').slideToggle();
+            })
+
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

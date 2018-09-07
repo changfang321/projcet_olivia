@@ -1,0 +1,412 @@
+/* phone css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#all {
+    width: 480px;
+    margin: auto;
+    position: relative;
+    background: #f5f5f5;
+    box-shadow: 0px -10px 60px rgba(0, 0, 0, 0.25);
+    height: 100%;
+}
+
+#block .dots a img {
+    width: 20px;
+    height: 20px;
+}
+
+#block .dots a {
+    width: 20px;
+    height: 20px;
+}
+
+#block {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    padding-left: 15px;
+}
+
+.imgs {
+    width: 450px;
+    height: 300px;
+}
+
+.imgs li img {
+    width: 450px;
+    height: 300px;
+    float: left;
+}
+
+/* ***********        navbar start       ************* */
+#navbar {
+    width: 450px;
+    height: 10%;
+    margin: auto;
+    float: left;
+}
+
+.nav,
+#contentul,
+.mapul,
+.tresA {
+    list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.nav,
+.nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.logoli a {
+    width: 220px;
+    display: block;
+    float: left;
+}
+
+.logoP {
+    display: block;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 25px;
+    color: rgb(255, 131, 73);
+}
+
+.logoP:hover {
+    color: rgb(252, 78, 78);
+}
+
+.tres {
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin: 0px 5px 0px 1px;
+    padding-top: 8px;
+}
+
+.tres a {
+    font-size: 20px;
+    margin: 30px 0px 0px 146px;
+    background-color: #f3b995;
+    border-radius: 13px;
+    padding: 4px 0 0 15px;
+}
+
+.tresA {
+    display: none;
+}
+
+/*  ***************  navbar  ************** end */
+.content {
+    float: left;
+    width: 480px;
+    height: 765px;
+    overflow: hidden;
+}
+
+#contentul {
+    margin: 0;
+    padding: 0;
+}
+
+#contentul li {
+    display: block;
+    float: left;
+    width: 480px;
+    height: 280px;
+    text-align: center;
+}
+
+#contentul li img {
+    width: 480px;
+    height: 480px;
+    padding: 0 0 0 13px;
+}
+
+.contentli h1 {
+    font-size: 20px;
+}
+
+.contentli p {
+    font-size: 15px;
+}
+
+.tiles {
+    width: 480px;
+    float: left;
+    margin: 15px auto 10px auto;
+}
+
+.tile {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.photo {
+    width: 350px;
+    height: 350px;
+    margin: 5px auto 0px auto;
+}
+
+#designimg {
+    width: 480px;
+    height: 300px;
+    margin: auto;
+    float: left;
+}
+
+.sliderul {
+    padding: 8px 0px 2px 24px;
+}
+
+.sliderli img {
+    display: block;
+    width: 430px;
+    height: 270px;
+    margin: auto;
+}
+
+#map {
+    width: 450px;
+    float: left;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 481px) {
+    #all {
+        width: 800px;
+    }
+
+    #block {
+        padding-left: 0px;
+        height: 600px;
+    }
+
+    .imgs li img {
+        width: 800px;
+        height: 600px;
+    }
+
+    #block .dots a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #block .dots a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .imgs {
+        width: 800px;
+        height: 400px;
+    }
+
+    .imgs img {
+        height: 600px;
+    }
+
+    /* *****************navbar start ************ */
+    #navbar {
+        width: 800px;
+        height: 100px;
+    }
+
+    .nav {
+        margin-left: 20px;
+    }
+
+    .logoP {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .tres {
+        width: 110px;
+    }
+
+    .nav li {
+        float: left;
+    }
+
+    .tres a {
+        font-size: 18px;
+        padding-top: 10px;
+        margin: 0px 0px 0px 155px;
+        padding: 4px 0 0 10px;
+        background-color: unset;
+    }
+
+    .tresA {
+        bottom: 25px;
+        display: block;
+    }
+
+    .logoli a img {
+        z-index: 1;
+        top: 10px;
+    }
+
+    /* ************navbar end********** */
+    .content {
+        width: 800px;
+        height: 450px;
+    }
+
+    .contentli {
+        padding: 70px 0 0 40px;
+    }
+
+    #contentul li {
+        width: 350px;
+        height: 430px;
+    }
+
+    #contentul li img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .tiles {
+        width: 800px;
+        margin: 5px 1px 5px 1px;
+    }
+
+    .tile {
+        width: 260px;
+        padding-left: 5px;
+    }
+
+    .photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #designimg {
+        width: 800px;
+        height: 400px;
+    }
+
+    .sliderul {
+        padding: 8px 0px 7px 24px;
+    }
+
+    .sliderli img {
+        width: 750px;
+        height: 375px;
+    }
+
+    #map {
+        width: 800px;
+        height: 100%;
+        float: left;
+    }
+}
+
+/* pc css */
+@media only screen and (min-width: 1319px) {
+    #all {
+        width: 1300px;
+    }
+
+    #block {
+        width: 1300px;
+        height: 700px;
+    }
+
+    .imgs li img {
+        width: 1300px;
+        height: 700px;
+    }
+
+    /* *****************navbar start ************ */
+    #navbar {
+        width: 100%;
+    }
+
+    .nav {
+        margin-left: 40px;
+    }
+
+    .nav li {
+        display: block;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .tresA {
+        top: 20px;
+    }
+
+    .tres {
+        margin-right: 50px;
+    }
+
+    .tres li {
+        display: block;
+        float: left;
+    }
+
+    .tres a {
+        width: 90%;
+        font-size: 20px;
+        right: 110px;
+    }
+
+    /* ************navbar end********** */
+    #contentul li {
+        width: 600px;
+        height: 350px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .contentli {
+        padding-top: 150px;
+    }
+
+    #contentul li img {
+        width: 450px;
+        height: 400px;
+        padding: 60px 70px 0 0;
+    }
+
+    .tiles {
+        height: 400px;
+        width: 1299px;
+    }
+
+    .tile {
+        width: 350px;
+        height: 350px;
+        padding-left: 60px;
+    }
+
+    #designimg {
+        width: 1300px;
+        height: 650px;
+    }
+
+    .sliderli img {
+        width: 1250px;
+        height: 615px;
+    }
+
+    #map {
+        width: 1300px;
+        height: 650px;
+    }
+}

@@ -26,7 +26,7 @@ if(isset($_POST['AddForm']) && $_POST['AddForm'] == "INSERT"){
   $sth ->bindParam(":created_at", $_POST['created_at'], PDO::PARAM_STR);
   $sth ->execute();
 
-  header('Location: list.php');
+ // header('Location: .php');
 } 
  ?>
 <!DOCTYPE html>

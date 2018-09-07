@@ -1,0 +1,120 @@
+/* 網路特效:https://codepen.io/Kseso/pen/bfzjC */
+/* @import url(https: //fonts.googleapis.com/css?family=Quando); */
+/* *, *:after, *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+} */
+* {
+    margin: 0;
+    /* padding: 0; */
+    border: 0 none;
+    position: relative;
+    outline: none;
+}
+
+h3>a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    display: block;
+    padding-left: 27px;
+    padding-bottom: 8px;
+    /*把超連結變成區塊.連點被景都可以超連結 */
+    width: 80%;
+    /*把a標籤範圍變成跟li一樣大*/
+    height: 40px;
+}
+
+h3>a:before {
+    content: "";
+    background: #7FDBFF;
+    position: absolute;
+    width: 85%;
+    height: 5px;
+    bottom: 10px;
+    left: 12px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    animation: 1.4s forwards no-hover-v linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+h3>a:hover:before,
+h3>a:focus:before {
+    animation: .5s forwards hover-v linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover-v {
+    0% {
+        transform: scaleX(0);
+        height: 5px;
+    }
+
+    45% {
+        transform: scaleX(1.05);
+        height: 5px;
+    }
+
+    55% {
+        height: 5px;
+    }
+
+    /* 特效最後高度 */
+    100% {
+        transform: scaleX(1.05);
+        height: 2rem;
+    }
+}
+
+@keyframes no-hover-v {
+    0% {
+        transform: scaleX(1.05);
+        height: 2rem;
+    }
+
+    45% {
+        height: 5px;
+    }
+
+    55% {
+        transform: scaleX(1.05);
+        height: 5px;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(0);
+        height: 5px;
+        opacity: .02;
+    }
+}
+
+/* 選單固定在上方 ↓ */
+.menuFix {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    opacity: 0.4;
+}
+
+.menuFix:hover {
+    opacity: 1;
+}
+
+/* logo */
+.logoli a {
+    display: block;
+    /*把超連結變成區塊.連點被景都可以超連結 */
+    width: 80%;
+    /*把a標籤範圍變成跟li一樣大*/
+    height: 40px;
+}
+
+.logoli a img {
+    z-index: 1;
+    bottom: 10px;
+}

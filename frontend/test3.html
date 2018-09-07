@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    /* * {
+        box-sizing: border-box;
+    } */
+
+    body {
+        background: rgba(128, 128, 128, 0.25);
+    }
+
+    ul,
+    li {
+        list-style-type: none;
+    }
+
+    li {
+        display: block;
+        position: absolute;
+    }
+
+    section {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 1300px;
+        height: 650px;
+    }
+
+    .sliderul {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        /* width: 95%; */
+        /*margin: 0 auto;*/
+        margin: 8px;
+        padding: 14px;
+        height: 610px;
+        background: #fff;
+        border: 2px solid #9e9e9e;
+
+    }
+
+    .des {
+        position: absolute;
+        z-index: 3;
+        padding: 1%;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.44);
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    /*impotant*/
+
+    img {
+        display: block;
+        width: 1300px;
+        height: 600px;
+    }
+
+    .arrowNP {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        margin: auto 0;
+        z-index: 100;
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        border-radius: 45px;
+        transition: all 0.3s;
+        opacity: 0
+    }
+
+
+    .slider .current {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .slider {
+        position: block;
+        z-index: 0;
+        opacity: 0;
+    }
+
+    #P {
+        left: 5%;
+        background-image: ">";
+        background-position: 14px;
+        transform: translateX(20px);
+    }
+
+    #N {
+        right: 5%;
+        background-image: "<";
+        background-position: 19px;
+        transform: translateX(-20px);
+
+    }
+
+    .sliderHovered.arrowNP {
+        opacity: 1
+    }
+
+    .sliderHovered#P {
+        transform: translateX(0);
+    }
+
+    .sliderHovered#N {
+        transform: translateX(0);
+    }
+</style>
+
+
+
+
+<body>
+
+    <section>
+        <span id="P" class="arrowNP">
+        </span>
+        <ul class="sliderul">
+            <li class="sliderli">
+                <img src="imgs/1.jpg" alt="silder—1">
+                <div class="des">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <span>tempora repudiandae quisquam quaerat facere quis obcaecati nam.</span>
+                </div>
+            </li>
+            <li class="sliderli">
+                <img src="imgs/2.jpg" alt="silder-2">
+                <div class="des">
+                    <h3>你好吗你好吗你好吗你好吗你好吗你好吗</h3>
+                    <span>tempora repudiandae quisquam quaerat facere quis obcaecati nam.</span>
+                </div>
+            </li>
+            <li class="sliderli">
+                <img src="imgs/3.jpg" alt="silder-3">
+                <div class="des">
+                    <h3>我很好我很好我很好我很好我很好</h3>
+                    <span>tempora repudiandae quisquam quaerat facere quis obcaecati nam.</span>
+                </div>
+            </li>
+        </ul>
+        <span id="N" class="arrowNP"></span>
+    </section>
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var autosilde = true;
+            var pausesilde = true;
+
+            $(".sliderli").first().addClass("current");
+            $(".sliderli").hide();
+            $(".current").show();
+
+            function nextslider() {
+                $(".current").removeClass("current").addClass("oldActive");
+                if ($(".oldActive").is(":last-child")) {
+                    $(".sliderli").first().addClass("current");
+                } else {
+                    $(".oldActive").next().addClass("current");
+                }
+                $(".oldActive").removeClass("oldActive");
+                $(".sliderli").fadeOut(500);
+                $(".current").fadeIn(500);
+
+            }
+
+            function prevslider() {
+                $(".current").removeClass("current").addClass("oldActive");
+                if ($(".oldActive").is(":first-child")) {
+                    $(".sliderli").last().addClass("current");
+                } else {
+                    $(".oldActive").prev().addClass("current");
+                }
+                $(".oldActive").removeClass("oldActive");
+                $(".sliderli").fadeOut(500);
+                $(".current").fadeIn(500);
+
+            }
+
+            $("#N").click(function () {
+                nextslider();
+            })
+            $("#P").click(function () {
+                prevslider();
+            })
+        })
+
+        $("section").hover(function () {
+            $(".arrowNP").addClass("sliderHovered");
+        }, function () {
+            $(".arrowNP").removeClass("sliderHovered");
+        })
+    </script>
+
+
+
+</body>
+
+
+
+
+
+</html>

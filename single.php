@@ -42,23 +42,28 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 animate-box">
-					
-					<div class="owl-carousel owl-carousel-fullwidth product-carousel">
+				<div class="owl-carousel owl-carousel-fullwidth product-carousel">
 						<div class="item">
 							<div class="active text-center">
 								<figure>
-									<img src="uploads/products/<?php echo $product['picture'];?>" alt="user">
+								<img src="uploads/products/<?php echo $product['picture'];?>" alt="user">
+								</figure>
+							</div>
+						</div>
+						<div class="item">
+							<div class="active text-center">
+								<figure>
+								<img src="uploads/products/<?php echo $product['picture'];?>" alt="user">
 								</figure>
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="row animate-box">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 							<h2><?php echo $product['name'];?></h2>
 							<p>
-								<a href="#" class="btn btn-primary btn-outline btn-lg"><i class="icon-shopping-cart"></i>Add to Cart</a>
-								<a href="#" class="btn btn-primary btn-outline btn-lg">Compare</a>
+								<a href="#" class="btn btn-primary btn-outline btn-lg"><i class="icon-shopping-cart"></i>加入購物車</a>
 							</p>
 						</div>
 					</div>
@@ -86,12 +91,12 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 
 									<div class="row">
 										<div class="col-md-6">
-											<h2 class="uppercase">Keep it simple</h2>
-											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+											<h2 class="uppercase">give you peace</h2>
+											<p></p>
 										</div>
 										<div class="col-md-6">
-											<h2 class="uppercase">Less is more</h2>
-											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+											<h2 class="uppercase">blow you mind</h2>
+											<p></p>
 										</div>
 									</div>
 
@@ -119,17 +124,19 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 									</ul>
 								</div>
 							</div>
-
-
 						</div>
-
+						
+						<div class="fh5co-tab-content tab-content" data-tab-content="3">
+								<div class="col-md-10 col-md-offset-1">
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 
 <?php require_once('template/footbar.php') ;?>
 	</div>
