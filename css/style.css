@@ -747,6 +747,10 @@ figure {
   padding: 7em 0;
   clear: both;
 }
+#fh5co-footer {
+  padding: 20px 0;
+  clear: both;
+}
 @media screen and (max-width: 768px) {
   #fh5co-services,
   #fh5co-started,
@@ -1127,7 +1131,7 @@ figure {
   border: none !important;
   color: #fff;
   font-size: 16px !important;
-  width: 100%;
+  width: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1728,11 +1732,11 @@ figure {
 }
 
 .row-pb-md {
-  padding-bottom: 4em !important;
+  padding-bottom: 1em !important;
 }
 
 .row-pb-sm {
-  padding-bottom: 2em !important;
+  padding-bottom: 1em !important;
 }
 
 .fh5co-loader {

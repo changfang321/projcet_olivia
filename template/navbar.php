@@ -42,7 +42,11 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 						      </span>
 						    </div>
 						</li>
-						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+						<li class="shopping-cart"><a href="basket.php" class="cart"><span><small> 
+
+<?php if(isset($_SESSION['Cart']) && $_SESSION['Cart'] !=null) echo count($_SESSION['Cart']) ;
+
+else echo '0' ;?></small><i class="icon-shopping-cart"></i></span></a></li>
 					</ul>
 				</div>
 			</div>

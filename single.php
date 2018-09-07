@@ -22,21 +22,21 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 	<div id="page">
 	<?php require_once('template/navbar.php') ;?>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm text-center" role="banner" style="background-image:url(uploads/category/<?php echo $pname['picture'] ;?>)">
+	<!-- <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm text-center" role="banner" style="background-image:url(uploads/category/<?php echo $pname['picture'] ;?>)">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>商品敘述</h1>
+							<h1><?php echo $product['name']; ?></h1>
 							<h2> <a href="#" target="_blank"></a></h2>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
+	</header> -->
 	
 	<div id="fh5co-product">
 		<div class="container">
@@ -58,7 +58,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 							</div>
 						</div>
 					</div>
-					
+<!-- 					
 					<div class="row animate-box">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 							<h2><?php echo $product['name'];?></h2>
@@ -66,7 +66,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 								<a href="#" class="btn btn-primary btn-outline btn-lg"><i class="icon-shopping-cart"></i>加入購物車</a>
 							</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="row">
@@ -84,6 +84,8 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 							<div class="fh5co-tab-content tab-content active" data-tab-content="1">
 								<div class="col-md-10 col-md-offset-1">
 									<span class="price">TW: <?php echo $product['price'];?></span>
+									<input type="number" value="1" name="quantity">
+									<span  class="btn btn-primary btn-outline"><a href="#"><i class="icon-shopping-cart"></i></a></span>
 									<h2><?php echo $product['name'];?></h2>
 									<p><?php echo $product['description'];?></p>
 
@@ -125,7 +127,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="fh5co-tab-content tab-content" data-tab-content="3">
 								<div class="col-md-10 col-md-offset-1">
 										</div>
@@ -139,7 +141,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 	</div>
 
 <?php require_once('template/footbar.php') ;?>
-	</div>
+
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>

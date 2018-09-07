@@ -37,12 +37,13 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 		   						<span class="price">Wedding arrangement</span>
 		   						<h2>婚禮佈置</h2>
 		   						<p>樂覓婚禮顧問為新人規劃過多樣化的婚禮主題佈置 從海洋風、旅行風、鄉村風、酒莊婚禮以及白金色、玫瑰金、童話故事風、歐式莊園風、時尚精品風、法式浪漫風、英倫風、大亨小傳風、咖啡主題婚禮…等，多變樣式且富有創意、故事性的主題，正等著您倆來實現．</p>
-			   					<p><a href="single.php" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
+			   					<p><a href="#" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
-		   	</li>
+			   </li>
+			   <!-- oooooooo -->
 		   	<li style="background-image: url(images/img_bg_2.jpg);">
 		   		<div class="container">
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
@@ -51,7 +52,7 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 		   						<span class="price">Flower arrangement</span>
 		   						<h2>花藝教學</h2>
 		   						<p>忙碌的生活中，空閒時你會如何放鬆？除了喝咖啡、看電影之外，不妨嘗試與花草植物相處的午后。不論是乾燥花、永生花、新鮮花朵，在花藝教室體驗手作，把迷人的花花草草帶入你生活的場所，細細品味一草一木，享受手作過程的純淨美好；跟著 Olivia 用植物開啟質感生活吧！ </p>
-			   					<p><a href="single.php" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
+			   					<p><a href="#" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
@@ -61,7 +62,7 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 	  	</div>
 	</aside>
 
-	<div id="fh5co-services" class="fh5co-bg-section">
+<!--	<div id="fh5co-services" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 text-center">
@@ -134,7 +135,7 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 			<?php }?>
 		
-				<!-- <div class="col-md-4 text-center animate-box">
+				 <div class="col-md-4 text-center animate-box">
 					<div class="product">
 						<div class="product-grid" style="background-image:url(images/product-2.jpg);">
 							<span class="sale">Sale</span>
@@ -216,12 +217,12 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 							<span class="price">$960</span>
 						</div>
 					</div>
-				</div> -->
+				</div> 
 			</div>
 		</div>
 	</div>
 
-	<!-- <div id="fh5co-testimonial" class="fh5co-bg-section">
+	<div id="fh5co-testimonial" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -271,10 +272,10 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div> 
 	
 
-	<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+	 <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="container">
 			<div class="row">
 				<div class="display-t">
@@ -324,9 +325,9 @@ $news_list = $query3->fetchAll(PDO::FETCH_ASSOC);
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div> 
 
-	<!-- <div id="fh5co-started">
+	< <div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
