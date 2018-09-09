@@ -78,10 +78,10 @@ if(!isset($_SESSION['Receiver'])||($_GET['url']=='ch1' && isset($_SESSION['Recei
                                 <div class="row">
                                 
                                  <div class="col-sm-12">
-                                    <div class="alert alert-info text-center">
-                                            <strong>本賣場商品除運送過程中造成毀損，其餘狀況均不受理退換貨!</strong> 
+                                 <div class="alert alert-info text-center">
+                                            <strong>本賣場商品除運送過程中造成毀損事情況退換貨，其餘狀況均不受理退換貨!</strong> 
                                         </div>
-                                </div>
+                                 </div>
 
 
 
