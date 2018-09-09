@@ -1,0 +1,110 @@
+ /* * {
+        box-sizing: border-box;
+    } */
+ /* body {
+        background: rgba(128, 128, 128, 0.25);
+    }*/
+ .sliderul,
+ .sliderli {
+     list-style-type: none;
+ }
+
+ .sliderli {
+     display: block;
+     position: absolute;
+ }
+
+ #designimg {
+     position: relative;
+     display: block;
+     overflow: hidden;
+     /* margin: 0 auto; */
+     width: 95%px;
+     height: 95%px;
+ }
+
+ .sliderul {
+     position: relative;
+     overflow: hidden;
+     display: block;
+     /* width: 95%; */
+     margin: 0 auto;
+     /* margin: 10px; */
+     /* padding-top: 10px; */
+     height: 95%;
+     background: #fff;
+     border: 2px solid #9e9e9e;
+ }
+
+ .des {
+     position: absolute;
+     z-index: 2;
+     padding: 1%;
+     bottom: 0;
+     background-color: rgba(255, 255, 255, 0.44);
+     display: block;
+     width: 100%;
+     text-align: center;
+     left: 0;
+ }
+
+ /*impotant*/
+ .sliderli img {
+     display: block;
+ }
+
+ .arrowNP {
+     position: absolute;
+     top: 50%;
+     right: 5%;
+     margin: auto 0;
+     z-index: 100;
+     width: 45px;
+     height: 45px;
+     background-color: rgb(255, 255, 255);
+     background-repeat: no-repeat;
+     background-size: 25%;
+     border-radius: 45px;
+     transition: all 0.3s;
+     opacity: 0;
+ }
+
+ .sliderli .current {
+     position: relative;
+     z-index: 1;
+     opacity: 1;
+ }
+
+ .slider {
+     position: block;
+     z-index: 0;
+     opacity: 0;
+ }
+
+ #P {
+     left: 5%;
+     background-image: url('../images/hand-point-left-regular.png');
+     background-position: 11px;
+     transform: translateX(20px);
+     background-size: 25px 25px;
+ }
+
+ #N {
+     right: 5%;
+     background-image: url('../images/hand-point-right-regular.png');
+     background-position: 11px;
+     transform: translateX(-20px);
+     background-size: 25px 25px;
+ }
+
+ .sliderHovered.arrowNP {
+     opacity: 0.8;
+ }
+
+ .sliderHovered#P {
+     transform: translateX(0);
+ }
+
+ .sliderHovered#N {
+     transform: translateX(0);
+ }

@@ -1,0 +1,16 @@
+.pagination-holder {
+    clear: both;
+    margin: 0 0 20px 125px;
+}
+
+@media only screen and (min-width: 481px) {
+    .pagination-holder {
+        margin: 0 0 20px 290px;
+    }
+}
+
+@media only screen and (min-width: 1319px) {
+    .pagination-holder {
+        margin: 0 0 20px 500px;
+    }
+}

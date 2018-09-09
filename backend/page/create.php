@@ -23,7 +23,6 @@ if(isset($_POST['AddForm']) && $_POST['AddForm'] == "INSERT"){
   <link rel="stylesheet" href="../../js/jquery-ui-1.12.1/jquery-ui.min.css" type="text/css"> 
   <link rel="stylesheet" href="../css/theme.css" type="text/css">
   <script src="../../js/validator.js"></script>
-
 </head>
 
 <body>
@@ -98,6 +97,7 @@ if(isset($_POST['AddForm']) && $_POST['AddForm'] == "INSERT"){
   <script src="../../js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
   <script src="../../js/tinymce/tinymce.min.js"></script>
   <script src="../../js/validator.js"></script>
+
   <script>
     // Tinymce
     tinymce.init({

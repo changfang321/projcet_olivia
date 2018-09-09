@@ -15,6 +15,7 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
+	<title>	OLIVIA. Flower your mind</title>
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
@@ -25,19 +26,19 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/sticky_social.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
 	<script src="js/respond.min.js"></script>
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.default.css">
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/jquery.min.js"></script>
 
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>

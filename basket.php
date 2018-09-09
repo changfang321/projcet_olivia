@@ -42,7 +42,7 @@ $update = "true";
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">首頁</a>
+                        <li><a href="index.php">首頁</a>
                         </li>
                         <li>我的購物車</li>
                     </ul>
@@ -56,7 +56,7 @@ $update = "true";
 
                            <h1>我的購物車</h1>
                             <?php if(isset($_SESSION['Cart']) && $_SESSION['Cart'] != null){ ?>
-                            <p class="text-muted"><?php echo count($_SESSION['Cart']); ?></p>
+                           
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -64,7 +64,7 @@ $update = "true";
                                             <th colspan="2">產品名稱</th>
                                             <th>數量</th>
                                             <th>單價</th>
-                                            <th>折扣</th>
+                                            
                                             <th colspan="2">金額</th>
                                         </tr>
                                     </thead>
@@ -78,19 +78,19 @@ $update = "true";
                                         <tr>
                                             <td>
                                             <a href="products.php?product_id=<?php echo $_SESSION['Cart'][$i]['products_id']; ?>">
-                                                    <img src="uploads/products/<?php echo $_SESSION['Cart'][$i]['pic'] ?>" width="100px" alt="White Blouse Armani">
+                                                    <img src="uploads/products/<?php echo $_SESSION['Cart'][$i]['pic'] ?>" width="100px" alt="">
                                                 </a>
                                             </td>
                                             <td><a href="products.php?product_id=<?php echo $_SESSION['Cart'][$i]['products_id']; ?>"><?php echo $_SESSION['Cart'][$i]['product_name']; ?></a>
                                             </td>
                                             <td>
-                                            <input type="number" name="quantity[]" value="<?php echo $_SESSION['Cart'][$i]['quantity']; ?>" class="form-control">
+                                            <input type="number" min = '1' name="quantity[]" value="<?php echo $_SESSION['Cart'][$i]['quantity']; ?>" class="form-control">
                                             </td>
                                             <input type="hidden" name="index" value="<?php echo $i;?>">
                                             <input type="hidden" name="EditCart" value="UPDATE">
 
                                             <td>$NT <?php echo $_SESSION['Cart'][$i]['price'] ; ?></td>
-                                            <td>$NT0.00</td>
+                                           
                                             <td>$NT<?php $subtotal = $_SESSION['Cart'][$i]['quantity'] * intval($_SESSION['Cart'][$i]['price']); echo $subtotal;?></td>
                                             <td><a href="cart/delete_cart.php?CartID=<?php echo $i; ?>"><i class="fa fa-trash-o"></i></a>
                                             </td>
@@ -118,13 +118,8 @@ $update = "true";
       </div>
   <div class="pull-right">
          <button type="submit" class="btn btn-default"><i class="fa fa-refresh"></i> 更新購物車</button>
-         <?php if(isset($_SESSION['member']) && $_SESSION['member'] !=null) { ?>
-          <a href="checkout1.php" class="btn btn-primary">我要結帳 <i class="fa fa-chevron-right"></i>
-          <?php }else{ ?>
-                   <a href="register.php?url=basket" class="btn btn-primary">我要結帳 <i class="fa fa-chevron-right"></i>
-                    </a>
-         <?php } ?>
-       </a>
+ 
+          <a href="checkout1.php" class="btn btn-primary">我要結帳 <i class="fa fa-chevron-right"></i></a>
    </div>
 </div>
 
@@ -191,7 +186,28 @@ $update = "true";
 
        <?php require_once('template/footbar.php'); ?>
 
-       <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="info" aria-hidden="true">
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="info" aria-hidden="true">
     <div class="modal-dialog modal-sm">
 
         <div class="modal-content">

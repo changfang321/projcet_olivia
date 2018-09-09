@@ -1,0 +1,97 @@
+/*----------- sticky-social -----------------------*/
+
+/* entypo */
+
+#sticky-social [class*="fa-"]:before {
+  font-family: fontawesome;
+}
+#sticky-social a {
+  text-decoration: none;
+}
+#sticky-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#sticky-social {
+  right: 0;
+  position: fixed;
+  top: 35%;
+}
+#sticky-social a {
+  background: rgb(51, 51, 51) none repeat scroll 0 0;
+  border-radius: 5px 0 0 5px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font: 16px/35px "Roboto", sans-serif;
+  margin-bottom: 5px;
+  padding: 6px 0;
+  position: relative;
+  text-align: center;
+  width: 35px;
+}
+#sticky-social a span {
+  border-radius: 5px 0 0 5px;
+  line-height: 35px;
+  margin-top: -6px;
+  padding: 7px 0 6px;
+  position: absolute;
+  right: -120px;
+  text-align: center;
+  transition: all 0.15s ease-in-out 0s;
+  width: 120px;
+}
+#sticky-social a:hover span {
+  right: 10%;
+}
+#sticky-social i {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  float: left;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span {
+  background: #3b5998;
+}
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span {
+  background: #00aced;
+}
+#sticky-social a[class*="rss"],
+#sticky-social a[class*="rss"]:hover,
+#sticky-social a[class*="rss"] span {
+  background: #dd4b39;
+}
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span {
+  background: #007bb6;
+}
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span {
+  background: #517fa4;
+}
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span {
+  background: #eb4924;
+}
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span {
+  background: #cc2127;
+}
+#sticky-social a[class*="share"],
+#sticky-social a[class*="share"]:hover,
+#sticky-social a[class*="share"] span {
+  background: #c11a21;
+}
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span {
+  background: #32506d;
+}

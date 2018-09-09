@@ -7,7 +7,7 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.php">OLIVIA.</a></div>
+					<div id="fh5co-logo"><a href="index.php" data-animate-hover="bounce">OLIVIA.</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
@@ -19,7 +19,7 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 							 <?php } ?>
 							</ul>
 						</li>
-						<li><a href="about.php">關於OLIVIA</a></li>
+						<!-- <li><a href="about.php">關於OLIVIA</a></li> -->
 						<li class="has-dropdown">
 							<a href="services.php">服務項目</a>
 							<ul class="dropdown">
@@ -29,7 +29,7 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 								<li><a href="#">comming soon</a></li>
 							</ul>
 						</li>
-						<li><a href="contact.php">與我聯絡</a></li>
+						<!-- <li><a href="contact.php">與我聯絡</a></li> -->
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">

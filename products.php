@@ -24,7 +24,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
     <meta name="keywords" content="">
 
     <title>
-        Cake House : 帶給你最天然健康的幸福滋味
+        OLIVIA. 享受花叢樂趣
     </title>
 
     <meta name="keywords" content="">
@@ -101,7 +101,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
                 <div class="col-md-9">
 
                     <div class="row" id="productMain">
-                        <div class="col-sm-6">
+                        <div class="col-lg-6">
                             <div id="mainImage">
                                 <img src="uploads/products/<?php echo $product['picture'];?>"  alt="" class="img-responsive">
                        </div>
@@ -130,9 +130,8 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
                             <div class="box">
                                 
                                 <h1 class="text-center"><?php echo $product['name'];?></h1>
-                                <p class="goToDescription"><a href="#details" class="scroll-to">詳細介紹</a>
-                                </p>
-                                <p class="quantity"><input type="number" value='1' name='quantity' class='form-conteol'></p>
+
+                                <p class="quantity"><input type="number" value='1' name='quantity'  min = '1' class='form-control'></p>
                                 <p class="price">$<?php echo $product['price'];?></p>
                                 <?php if(isset($_GET['Existed']) && $_GET['Existed'] != null){
                                             if($_GET['Existed'] == 'true'){ ?>
@@ -140,7 +139,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
                                         <strong>此商品已存在購物車，請至「我的購物車」修改數量。</strong>
                                     </div>
                                     <?php }else{ ?>
-                                     <div class="alert alert-danger">
+                                     <div class="alert alert-success">
                                         <strong>成功加入購物車!</strong>
                                     </div>   
                                     <?php  }//end $_GET['Existed'] == 'true'
@@ -173,7 +172,7 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 						<ul class="fh5co-tab-nav">
 							<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-file"></i></span><span class="hidden-xs">商品敘述</span></a></li>
 							<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-bar-graph"></i></span><span class="hidden-xs">購物須知</span></a></li>
-							<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-star"></i></span><span class="hidden-xs">注意事項</span></a></li>
+							<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="fa fa-bullhorn"></i></span><span class="hidden-xs">注意事項</span></a></li>
 						</ul>
 
 						<!-- Tabs -->
@@ -191,7 +190,6 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 										<h2 class="uppercase">blow you mind</h2>
 										</div>
 									</div>
-
 								</div>
 							</div>
 
@@ -220,9 +218,9 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 											2. 主花材因市場因素短缺，將以電話通知可更換花材。<br>
 											3. 盆花、盆栽、蘭花圖片內之花器通常為參考，實際花器以現貨為主。</li>
 										<li>花材照顧<br>
-											1. 玫瑰、結梗、香水百合等主花材壽命約5天。請保持空氣流通、溫度<30度、適度加水換水，可增加觀賞期。<br>
+											1. 玫瑰、結梗、香水百合等主花材壽命約5天。請保持空氣流通、溫度30度、適度加水換水，可增加觀賞期。<br>
 											2. 蘭花類壽命約3周以上。<br>
-											3. 盆栽類均為適合室內種植的植物，可長期種植。</li>
+											3. 盆栽類均為適合室內種植的植物，可長期種植。
                                         </li>
 									</ul>
 									</div>

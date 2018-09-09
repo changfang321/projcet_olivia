@@ -23,7 +23,7 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
 					<?php foreach($categories as $category){ ?>
-						<li><a href="#"><?php echo $category['category'];?></a></li>
+						<li><a href="product.php?category=<?php echo $category['product_categories_id'];?>"><?php echo $category['category'];?></a></li>
 				<?php }?>
 					</ul>
 				</div>
@@ -42,16 +42,41 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 					<p>
 						<small class="block">Copyright &copy; 2018.Company OLIVIA. All rights reserved.<a target="_blank" href="#"></a></small> 
 					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
 				</div>
 			</div>
 
 		</div>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	
+
 	</footer>
+
+
+
+	<aside id="sticky-social">
+		<ul>
+			<li><a href="#" class="fa fa-facebook" target="_blank"><span><i class="fa fa-facebook" aria-hidden="true"></i>
+						Facebook</span></a></li>
+			<li><a href="#" class="fa fa-twitter" target="_blank"><span><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span></a></li>
+			<li><a href="#" class="fa fa-rss" target="_blank"><span><i class="fa fa-rss" aria-hidden="true"></i> RSS</span></a></li>
+			<li><a href="#" class="fa fa-pinterest-p" target="_blank"><span><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+						Pinterest</span></a></li>
+			<li><a href="#" class="fa fa-share-alt" target="_blank"><span><i class="fa fa-share-alt" aria-hidden="true"></i>
+						Flickr</span></a></li>
+		</ul>
+	</aside>
