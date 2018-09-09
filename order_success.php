@@ -90,7 +90,7 @@ if($result){
                 <div class="col-md-12">
 
                     <ul class="breadcrumb">
-                        <li><a href="#">首頁</a>
+                        <li><a href="index.php">首頁</a>
                         </li>
                         <li>我的購物車</li>
                         <li>結帳成功</li>
@@ -102,12 +102,16 @@ if($result){
                             <div class="box">
 
                                 <p class="text-center">
-                                    <img src="../images/logo.png" alt="Cake House template">
+                                    <img src="images/footerlogo.png" alt="Cake House template">
                                 </p>
                               
                                 <h3>結帳成功</h3>
-                                
-                                <p class="text-center">您已成功完成購物，您可前往<a href="customer-orders.php">我的訂單</a>查詢出貨進度或<a href="product_list.php?category_id=1">繼續購物</a></p>
+                                <h4>你的訂單編號為:<h4>
+
+                                <div class="alert alert-info text-center">
+                                    <strong><strong><?php echo $_POST['order_no'] ?></strong> 
+                                </div>
+                                <p class="text-center">您已成功完成購物，您可前往<a href="customer-orders.php">查詢訂單</a>查詢出貨進度</p>
                              
                             </div>
                         </div>

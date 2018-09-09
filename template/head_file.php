@@ -19,6 +19,7 @@
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -32,12 +33,12 @@
 	<script src="js/respond.min.js"></script>
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/style.default.css">
 
 	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.default.css">
 	<link rel="stylesheet" href="css/style.css">
 	
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
 	<!-- FOR IE9 below -->

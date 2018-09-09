@@ -184,10 +184,10 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 									<p><?php echo $product['description'];?></p>
 									<div class="row">
 										<div class="col-md-6">
-										<h2 class="uppercase">give you peace</h2>
+										<h2 class="uppercase">keep it simple</h2>
 										</div>
 										<div class="col-md-6">
-										<h2 class="uppercase">blow you mind</h2>
+										<h2 class="uppercase">less is more</h2>
 										</div>
 									</div>
 								</div>
@@ -252,24 +252,6 @@ $pname = $query2->fetch(PDO::FETCH_ASSOC);
 
 
        <?php require_once('template/footbar.php'); ?>
-
-
-   <!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
 
 
 

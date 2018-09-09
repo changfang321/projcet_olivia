@@ -1245,6 +1245,7 @@ figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  opacity: 0.6;
 }
 @media screen and (max-width: 768px) {
   #fh5co-offcanvas {

@@ -76,7 +76,7 @@ $totalRows = count($data);
                 <th>行動電話</th>
                 <th>收件地址</th>
                 <th width="10%">訂單總金額</th>
-                <th width="20%">操作</th>
+                <th width="30%">操作</th>
               </tr>
             </thead>
             <tbody>
@@ -91,6 +91,7 @@ $totalRows = count($data);
                 <td>
                   <a href="../order_details/list.php?customer_orders_id=<?php echo $customer_orders['customer_orders_id'];?>" class="btn btn-outline-primary">檢視訂單明細</a>
                   <a href='edit.php?customer_orders_id=<?php echo $customer_orders['customer_orders_id']; ?>' class="btn btn-outline-primary">編輯</a>
+                  <a href="delete.php?customer_orders_id=<?php echo $customer_orders['customer_orders_id'];?>&status=<?php echo $customer_orders['status']; ?>" class="btn btn-outline-primary" onclick="if(!confirm('是否確定刪除此筆資料?刪除後無法回復')){return false;};">刪除</a>
                 </td>
               </tr>
               <?php } ?>

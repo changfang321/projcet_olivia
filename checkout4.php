@@ -2,8 +2,6 @@
 session_start();
 if(isset($_POST['Payment'])&& $_POST['Payment']=='POST'){
     $_SESSION['Receiver']['payment'] = $_POST['payment'];
-
-    print_r($_SESSION['Receiver']);
 }
 ?>
 <!DOCTYPE html>

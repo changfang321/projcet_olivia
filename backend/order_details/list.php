@@ -3,7 +3,7 @@ require_once('../function/login_check.php');
 require('../../connection/connection.php'); ?>
 <?php 
 
-$limit = 1;
+$limit = 5;
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
 $start_from = ($page-1) * $limit;
 
